@@ -1,13 +1,13 @@
 import OPi.GPIO as GPIO
 import time
 
-print("Hi! Start!")
+print("Hi! Start!!")
 
 # Установка режима нумерации пинов (в данном случае, по названию пина)
 GPIO.setmode(GPIO.BOARD)
 
 # Номер GPIO пина, к которому подключена кнопка
-button_pin = "pwm1"
+button_pin = 1
 
 # Установка пина как вход
 GPIO.setup(button_pin, GPIO.IN)
