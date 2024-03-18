@@ -1,11 +1,11 @@
 import OPi.GPIO as GPIO
 import time
 
-print("Hi! Start!!")
+print("Start!")
 
 GPIO.setmode(GPIO.BOARD)
 
-button_pin = 1
+button_pin = 7
 
 GPIO.setup(button_pin, GPIO.IN)
 
