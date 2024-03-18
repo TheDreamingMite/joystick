@@ -12,13 +12,13 @@ GPIO.setup(button_pin, GPIO.IN)
 try:
     while True:
         button_state = GPIO.input(button_pin)
-
+        print(button_state)
         if button_state == GPIO.LOW:
-            print("Кнопка нажата")
+            print("+")
         else:
-            print("Кнопка отпущена")
+            print("-")
         time.sleep(0.1)
 
 except KeyboardInterrupt:
     GPIO.cleanup()
-print("Hi! Stop!")
+print("Stop!")
